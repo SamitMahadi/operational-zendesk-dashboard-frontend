@@ -1,6 +1,7 @@
 import React from 'react';
 import { Bar } from 'react-chartjs-2';
 import { Chart, CategoryScale, LinearScale, BarElement } from 'chart.js';
+import { Typography } from '@mui/material';
 
 
 
@@ -19,13 +20,13 @@ const data = {
             'rgb(0,128,0,0.8)	',
 
         ],
-        
+
         borderWidth: 1,
-        barThickness:30,
+        barThickness: 30,
         categoryPercentage: 1,
-      
+
         options: {
-            
+
         }
     }]
 };
@@ -33,34 +34,38 @@ const config = {
     type: 'bar',
     data,
     options: {
-      indexAxis: 'y',
-      aspectRatio: 1.0,
-      scales: {
-        x:{
-           display:false,
-            grid: {
-                display: false
+        indexAxis: 'y',
+        aspectRatio: 1.0,
+        scales: {
+            x: {
+                display: false,
+                grid: {
+                    display: false
+                },
+
+            },
+            y: {
+                grid: {
+                    display: false
+                },
+
             },
 
-        },
-        y:{
-            grid: {
-                display: false
-            },
 
-        },
-        
-        
+        }
     }
-    }
-  };
+};
 const TicketsCharts = () => {
 
     return (
+
         <div>
-            <h1>TicketChart</h1>
+            <Typography sx={{ display: 'flex', justifyContent: 'center', }} variant='h5' color="#000000" gutterBottom>
+                Ticktets Solved By Agent
+            </Typography>
             <Bar {...config}></Bar>
         </div>
+
     );
 };
 

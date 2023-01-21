@@ -13,7 +13,7 @@ const data = {
 
         borderColor: 'rgb(102, 51, 153)',
         backgroundColor: 'rgb(102, 51, 153)',
-        fill: 1,
+        fill: true,
 
 
     }]
@@ -42,7 +42,7 @@ const datas = {
         borderColor: 'rgb(0,128,0,0.8)',
         backgroundColor: 'rgb(0,128,0,0.8)',
 
-        fill: 1
+        fill: true
     }]
 };
 const configs = {
